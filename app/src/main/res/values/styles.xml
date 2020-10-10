@@ -1,0 +1,54 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+    <style name="typoBig">
+        <item name="fontFamily">@font/barlow_semi_bold</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">24dp</item>
+    </style>
+    <style name="typoMiddle">
+        <item name="fontFamily">@font/barlow_medium</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="typoMiddleBold">
+        <item name="fontFamily">@font/barlow_semi_bold</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">18dp</item>
+    </style>
+    <style name="typoSmall">
+        <item name="fontFamily">@font/barlow_light</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="typoSmallBold">
+        <item name="fontFamily">@font/barlow_semi_bold</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">12dp</item>
+    </style>
+    <style name="typoNormal">
+        <item name="fontFamily">@font/barlow_regular</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+    <style name="typoNormalBold">
+        <item name="fontFamily">@font/barlow_semi_bold</item>
+        <item name="fontStyle">normal</item>
+        <item name="android:textSize">16dp</item>
+    </style>
+
+    <!--   Bottom sheet dialog -->
+    <style name="BottomSheetDialogTheme" parent="Theme.Design.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/BottomSheetStyle</item>
+    </style>
+    <style name="BottomSheetStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+</resources>

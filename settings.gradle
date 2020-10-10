@@ -1,0 +1,2 @@
+rootProject.name='Al Quran'
+include ':app'

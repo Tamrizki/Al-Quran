@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Al Quran</string>
+    <string name="text_daftar_surah">Daftar Surah</string>
+    <string name="msg_wait">Mohon tunggu...</string>
+</resources>

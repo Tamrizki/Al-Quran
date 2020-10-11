@@ -8,4 +8,3 @@ Aplikasi Al Quran sederhana yang berisi semua Surah Al-quran dan detail dari Aya
 <img src="https://drive.google.com/uc?export=view&id=11k8DlaPLhNfUexIWFt_e1ZEsW6CgmaDQ" width="200" height="350">
 <img src="https://drive.google.com/uc?export=view&id=11hE0BkflqPgTIdzp1TZYIsFCmGsDBR4s" width="200" height="350">
 </div>
-<img src="https://drive.google.com/uc?export=view&id=11k8DlaPLhNfUexIWFt_e1ZEsW6CgmaDQ" width="200" height="350">

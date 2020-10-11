@@ -1,6 +1,9 @@
 package tam.pa.alquran.activity.adapter;
 
 import android.app.Activity;
+import android.media.AudioManager;
+import android.media.MediaPlayer;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,14 +14,13 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.bottomsheet.BottomSheetDialog;
-
+import java.io.IOException;
 import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 import tam.pa.alquran.R;
+import tam.pa.alquran.dialog.dialogAudio.DialogAudio;
 import tam.pa.alquran.dialog.dialogAyat.BottomSheetDialogDetailAyat;
 import tam.pa.alquran.model.DataSurahItem;
 
@@ -65,10 +67,12 @@ public class SurahAdapter extends RecyclerView.Adapter<SurahAdapter.viewHolder> 
         @BindView(R.id.llSurah)
         LinearLayout llSurah;
         private DataSurahItem dataSurahItem;
+
         public viewHolder(@NonNull View itemView) {
             super(itemView);
             ButterKnife.bind(this, itemView);
             llSurah.setOnClickListener(this);
+            ibPlay.setOnClickListener(this);
         }
 
         public void Bind(DataSurahItem data) {
@@ -86,6 +90,11 @@ public class SurahAdapter extends RecyclerView.Adapter<SurahAdapter.viewHolder> 
             BottomSheetDialogDetailAyat dialog = new BottomSheetDialogDetailAyat(activity, dataSurahItem);
             dialog.show();
             dialog.setCanceledOnTouchOutside(false);
+            }
+            else if (view == ibPlay){
+                DialogAudio dialogAudio = new DialogAudio(activity, dataSurahItem);
+                dialogAudio.show();
+                dialogAudio.setCanceledOnTouchOutside(false);
             }
         }
     }
